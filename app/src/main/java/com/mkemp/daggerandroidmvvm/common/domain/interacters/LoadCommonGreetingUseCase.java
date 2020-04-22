@@ -14,7 +14,7 @@ import io.reactivex.Single;
  *
  * The use cases and their helpers could handle validation, reporting and other pre-processing tasks.
  */
-public class LoadCommonGreetingUseCase
+public class LoadCommonGreetingUseCase implements ILoadGreetingUseCase
 {
     // Use case has access to the repository it is used for
     private final CommonGreetingRepository mGreetingRepository;
@@ -28,8 +28,9 @@ public class LoadCommonGreetingUseCase
     /**
      * Execute this use case.
      *
-     * @return greeting from common greeting repository.
+     * @return a Single which contains the greeting from common greeting repository.
      */
+    @Override
     public Single<String> execute()
     {
         return mGreetingRepository.getGreeting();

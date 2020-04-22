@@ -1,5 +1,7 @@
 package com.mkemp.daggerandroidmvvm.lobby;
 
+import com.mkemp.daggerandroidmvvm.common.domain.interacters.ILoadGreetingUseCase;
+
 import javax.inject.Inject;
 
 import io.reactivex.Single;
@@ -12,7 +14,7 @@ import io.reactivex.Single;
  *
  * The use cases and their helpers could handle validation, reporting and other pre-processing tasks.
  */
-public class LoadLobbyGreetingUseCase
+public class LoadLobbyGreetingUseCase implements ILoadGreetingUseCase
 {
     // Use case has access to the repository it is used for
     private final LobbyGreetingRepository mGreetingRepository;
@@ -26,8 +28,9 @@ public class LoadLobbyGreetingUseCase
     /**
      * Execute this use case.
      *
-     * @return greeting from lobby greeting repository.
+     * @return a Single which contains the greeting from lobby greeting repository.
      */
+    @Override
     public Single<String> execute()
     {
         return mGreetingRepository.getGreeting();

@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.mkemp.daggerandroidmvvm.R;
 
+/**
+ * This is the View.
+ *
+ * Makes up part of the Presentation layer.
+ */
 public class LobbyActivity extends AppCompatActivity
 {
     

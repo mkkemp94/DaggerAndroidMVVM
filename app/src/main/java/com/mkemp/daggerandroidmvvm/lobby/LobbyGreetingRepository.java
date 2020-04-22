@@ -8,6 +8,8 @@ import io.reactivex.Single;
  * where your data comes from.
  *
  * It only cares about how to request data and what it gets back.
+ *
+ * Repositories are the Data layer.
  */
 public class LobbyGreetingRepository
 {

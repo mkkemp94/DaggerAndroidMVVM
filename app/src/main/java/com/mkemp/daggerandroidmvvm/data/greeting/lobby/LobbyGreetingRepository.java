@@ -1,4 +1,4 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.data.greeting.lobby;
 
 import io.reactivex.Single;
 
@@ -22,7 +22,7 @@ public class LobbyGreetingRepository
      *
      * @return a lobby greeting string
      */
-    Single<String> getGreeting()
+    public Single<String> getGreeting()
     {
         return Single.just("Hello from LobbyGreetingRepository");
     }

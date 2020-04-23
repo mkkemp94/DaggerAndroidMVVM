@@ -1,10 +1,10 @@
-package com.mkemp.daggerandroidmvvm.di;
+package com.mkemp.daggerandroidmvvm.injection.module;
 
 
 import android.content.Context;
 
 import com.mkemp.daggerandroidmvvm.App;
-import com.mkemp.daggerandroidmvvm.common.domain.model.CommonGreetingRepository;
+import com.mkemp.daggerandroidmvvm.data.greeting.common.CommonGreetingRepository;
 
 import javax.inject.Singleton;
 

@@ -1,7 +1,10 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.injection.module;
 
-import com.mkemp.daggerandroidmvvm.common.domain.interacters.LoadCommonGreetingUseCase;
-import com.mkemp.daggerandroidmvvm.rx.SchedulersFacade;
+import com.mkemp.daggerandroidmvvm.data.greeting.common.LoadCommonGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.lobby.LoadLobbyGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.lobby.LobbyGreetingRepository;
+import com.mkemp.daggerandroidmvvm.ui.lobby.LobbyViewModelFactory;
+import com.mkemp.daggerandroidmvvm.util.rx.SchedulersFacade;
 
 import dagger.Module;
 import dagger.Provides;
@@ -10,8 +13,8 @@ import dagger.Provides;
  * Define LobbyActivity-specific dependencies here.
  */
 @Module
-public class LobbyModule {
-    
+public class LobbyModule
+{
     @Provides
     LobbyGreetingRepository provideLobbyGreetingRepository() {
         return new LobbyGreetingRepository();

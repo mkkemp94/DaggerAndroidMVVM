@@ -1,6 +1,7 @@
-package com.mkemp.daggerandroidmvvm.common.domain.interacters;
+package com.mkemp.daggerandroidmvvm.data.greeting.common;
 
-import com.mkemp.daggerandroidmvvm.common.domain.model.CommonGreetingRepository;
+
+import com.mkemp.daggerandroidmvvm.data.greeting.base.ILoadGreetingUseCase;
 
 import javax.inject.Inject;
 

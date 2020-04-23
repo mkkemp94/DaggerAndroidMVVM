@@ -1,6 +1,6 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.data.greeting.lobby;
 
-import com.mkemp.daggerandroidmvvm.common.domain.interacters.ILoadGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.base.ILoadGreetingUseCase;
 
 import javax.inject.Inject;
 

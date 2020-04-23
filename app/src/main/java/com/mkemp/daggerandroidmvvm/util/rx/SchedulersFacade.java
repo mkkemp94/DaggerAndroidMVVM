@@ -1,4 +1,4 @@
-package com.mkemp.daggerandroidmvvm.rx;
+package com.mkemp.daggerandroidmvvm.util.rx;
 
 import javax.inject.Inject;
 

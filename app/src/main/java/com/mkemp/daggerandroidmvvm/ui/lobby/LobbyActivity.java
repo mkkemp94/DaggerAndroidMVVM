@@ -1,4 +1,4 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.ui.lobby;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mkemp.daggerandroidmvvm.R;
-import com.mkemp.daggerandroidmvvm.common.viewmodel.Response;
+import com.mkemp.daggerandroidmvvm.ui.lobby.models.Response;
 
 import javax.inject.Inject;
 

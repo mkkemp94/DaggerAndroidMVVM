@@ -1,12 +1,13 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.ui.lobby;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import com.mkemp.daggerandroidmvvm.common.domain.interacters.ILoadGreetingUseCase;
-import com.mkemp.daggerandroidmvvm.common.domain.interacters.LoadCommonGreetingUseCase;
-import com.mkemp.daggerandroidmvvm.common.viewmodel.Response;
-import com.mkemp.daggerandroidmvvm.rx.SchedulersFacade;
+import com.mkemp.daggerandroidmvvm.data.greeting.base.ILoadGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.common.LoadCommonGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.lobby.LoadLobbyGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.ui.lobby.models.Response;
+import com.mkemp.daggerandroidmvvm.util.rx.SchedulersFacade;
 
 import io.reactivex.disposables.CompositeDisposable;
 
@@ -34,8 +35,8 @@ public class LobbyViewModel extends ViewModel
     private final MutableLiveData<Response> mResponse = new MutableLiveData<>();
     
     LobbyViewModel(LoadCommonGreetingUseCase loadCommonGreetingUseCase,
-                   LoadLobbyGreetingUseCase loadLobbyGreetingUseCase,
-                   SchedulersFacade schedulersFacade)
+                          LoadLobbyGreetingUseCase loadLobbyGreetingUseCase,
+                          SchedulersFacade schedulersFacade)
     {
         mLoadCommonGreetingUseCase = loadCommonGreetingUseCase;
         mLoadLobbyGreetingUseCase = loadLobbyGreetingUseCase;

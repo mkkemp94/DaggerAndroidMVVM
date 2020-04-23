@@ -3,7 +3,7 @@ package com.mkemp.daggerandroidmvvm;
 import android.app.Activity;
 import android.app.Application;
 
-import com.mkemp.daggerandroidmvvm.di.DaggerAppComponent;
+import com.mkemp.daggerandroidmvvm.injection.DaggerAppComponent;
 
 import javax.inject.Inject;
 
@@ -22,7 +22,7 @@ public class App extends Application implements HasActivityInjector
     {
         super.onCreate();
     
-        if (BuildConfig.DEBUG) {
+        if ( BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
         }
     

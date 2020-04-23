@@ -1,11 +1,12 @@
-package com.mkemp.daggerandroidmvvm.lobby;
+package com.mkemp.daggerandroidmvvm.ui.lobby;
 
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.NonNull;
 
-import com.mkemp.daggerandroidmvvm.common.domain.interacters.LoadCommonGreetingUseCase;
-import com.mkemp.daggerandroidmvvm.rx.SchedulersFacade;
+import com.mkemp.daggerandroidmvvm.data.greeting.common.LoadCommonGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.data.greeting.lobby.LoadLobbyGreetingUseCase;
+import com.mkemp.daggerandroidmvvm.util.rx.SchedulersFacade;
 
 /**
  * LobbyViewModel requires certain dependencies to be provided at runtime.
@@ -17,9 +18,9 @@ public class LobbyViewModelFactory implements ViewModelProvider.Factory
     private final LoadLobbyGreetingUseCase mLoadLobbyGreetingUseCase;
     private final SchedulersFacade mSchedulersFacade;
     
-    LobbyViewModelFactory(LoadCommonGreetingUseCase loadCommonGreetingUseCase,
-                          LoadLobbyGreetingUseCase loadLobbyGreetingUseCase,
-                          SchedulersFacade schedulersFacade)
+    public LobbyViewModelFactory(LoadCommonGreetingUseCase loadCommonGreetingUseCase,
+                                 LoadLobbyGreetingUseCase loadLobbyGreetingUseCase,
+                                 SchedulersFacade schedulersFacade)
     {
         mLoadCommonGreetingUseCase = loadCommonGreetingUseCase;
         mLoadLobbyGreetingUseCase = loadLobbyGreetingUseCase;

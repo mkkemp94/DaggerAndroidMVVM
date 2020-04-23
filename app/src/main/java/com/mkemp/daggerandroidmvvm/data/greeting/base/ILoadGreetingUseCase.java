@@ -1,4 +1,4 @@
-package com.mkemp.daggerandroidmvvm.common.domain.interacters;
+package com.mkemp.daggerandroidmvvm.data.greeting.base;
 
 import io.reactivex.Single;
 

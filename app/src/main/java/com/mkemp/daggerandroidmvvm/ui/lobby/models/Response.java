@@ -1,4 +1,4 @@
-package com.mkemp.daggerandroidmvvm.common.viewmodel;
+package com.mkemp.daggerandroidmvvm.ui.lobby.models;
 
 import android.support.annotation.NonNull;
 

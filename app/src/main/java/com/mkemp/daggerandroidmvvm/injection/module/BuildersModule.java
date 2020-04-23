@@ -1,8 +1,7 @@
-package com.mkemp.daggerandroidmvvm.di;
+package com.mkemp.daggerandroidmvvm.injection.module;
 
 
-import com.mkemp.daggerandroidmvvm.lobby.LobbyActivity;
-import com.mkemp.daggerandroidmvvm.lobby.LobbyModule;
+import com.mkemp.daggerandroidmvvm.ui.lobby.LobbyActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

@@ -1,6 +1,8 @@
-package com.mkemp.daggerandroidmvvm.di;
+package com.mkemp.daggerandroidmvvm.injection;
 
 import com.mkemp.daggerandroidmvvm.App;
+import com.mkemp.daggerandroidmvvm.injection.module.AppModule;
+import com.mkemp.daggerandroidmvvm.injection.module.BuildersModule;
 
 import javax.inject.Singleton;
 
